@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
-/*
+/**
  * main - main block
- * Description: print possible sum of single digit number
+ * Description: print all possiblecombination of single digit number
  * Return: Always 0
  */
 int main(void)
