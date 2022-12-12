@@ -16,7 +16,7 @@ int main(void)
 		{
 			for (once = '0'; tens <= '9'; once++)
 			{
-				if (!(once == tens || tens == hundreds || hundreds > tens || tens > once))
+				if (!((once == tens) || (tens == hundreds) || (hundreds > tens) || (tens > once)))
 				{
 					putchar(hundreds);
 					putchar(tens);
