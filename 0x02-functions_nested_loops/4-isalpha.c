@@ -1,12 +1,15 @@
 #include "main.h"
 
 /**
- * _isalpha - checks for alphabetic character
- * @c: the character
- * Return: 1 if its alphabet, 0 if else
+ * _isalpha - cheacks for alphabet
+ * @c: character to be cheacked
+ *
+ * Return: 1 if character if a letter, 0 otherwise
  */
-
 int _isalpha(int c)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && C <= 'Z'));
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	else
+		return (0);
 }
