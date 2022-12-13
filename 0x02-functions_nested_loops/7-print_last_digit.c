@@ -1,13 +1,18 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints the last digit of a number
- * @n: numbers last digit
+ * print_last_digit - prints the last digit
+ * @n: number
  * Return: the last digit
  */
 int print_last_digit(int n)
 {
-	if (n < 0)
-		n = -n;
-	return (n % 10);
+	int i = n % 10;
+
+	if (i < 0)
+	{
+		i *= -1;
+	}
+	_putchar(i + '0');
+	return (i);
 }
