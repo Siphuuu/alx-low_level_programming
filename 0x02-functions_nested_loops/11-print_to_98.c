@@ -4,7 +4,6 @@
 /**
  * print_to_98 - prints all natural numbers
  * @n: number
- * Return: always 0
  */
 void print_to_98(int n)
 {
@@ -14,8 +13,7 @@ void print_to_98(int n)
 		putchar(n);
 		putchar(',');
 		putchar(' ');
-		n++
+		n++;
 	}
 	putchar('\n');
-	return (0);
 }
