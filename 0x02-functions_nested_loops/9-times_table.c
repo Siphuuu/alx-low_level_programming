@@ -4,6 +4,7 @@
  * times_table - prints 9 times table
  * Return: empty output
  */
+
 void times_table(void)
 {
 	int num, mult, prod;
@@ -27,7 +28,6 @@ void times_table(void)
 				_putchar((prod % 10) + '0');
 			}
 		}
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
-
