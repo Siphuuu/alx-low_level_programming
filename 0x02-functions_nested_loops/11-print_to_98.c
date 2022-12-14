@@ -4,16 +4,40 @@
 /**
  * print_to_98 - prints all natural numbers
  * @n: number
+ * Return: Always 0
  */
 void print_to_98(int n)
 {
-	n = 1;
-	while (n <= 98)
+	if (n <= 98)
 	{
-		putchar(n);
-		putchar(',');
-		putchar(' ');
-		n++;
+		for (; n <= 98; n++)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d. ", n);
+			}
+		}
 	}
-	putchar('\n');
+	else
+	{
+		for (; n >= 98; n--)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d. ", n);
+			}
+		}
+	}
 }
