@@ -2,7 +2,7 @@
 
 /**
  * times_table - prints 9 times table
- * Return: empty output
+ * Return: Empty output
  */
 
 void times_table(void)
@@ -20,7 +20,7 @@ void times_table(void)
 			prod = mult * num;
 			if (prod <= 9)
 			{
-				_putchar(' ');
+				_putchar('0');
 			}
 			else
 			{
@@ -28,6 +28,6 @@ void times_table(void)
 				_putchar((prod % 10) + '0');
 			}
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
