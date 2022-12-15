@@ -2,6 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 
+/**
+ * positive_or_negative - cheacks whether a number is positive or negative
+ * @i: integer
+ * Return: Always 0
+ */
+
 void positive_or_negative(int i)
 
 {
