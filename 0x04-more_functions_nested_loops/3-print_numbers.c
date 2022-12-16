@@ -1,20 +1,19 @@
 #include "main.h"
-#include "_putchar.c"
 
 /**
  * print_numbers - print number 0 up to 9
- * Return: the number
+ * Return: Always 0
  */
 
 void print_numbers(void)
-
 {
 	int x;
 
-	for (x = 0; x <= 9; x++)
+	x = 0;
+	while (i < 10)
 	{
-		_putchar(x + '0');
+		_putchar (i + '0');
+		i++;
 	}
 	_putchar('\n');
-	return ();
 }
