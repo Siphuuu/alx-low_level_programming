@@ -1,23 +1,33 @@
-#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * _strcpy - copy
- * @dest: destiny
- * @src: source
- * Return: the copied
+ * main - generate rendome valid
+ * password for the program
+ *
+ * Return: Always 0
  */
 
-char *_strcpy(char *dest, char *src)
+int main(void)
 {
-	char *start = dest;
+	int i, sum, n;
+	int pass[100];
 
-	while (*src != '\0')
+	sum = 0;
+	srand(time(NULL));
+	for (i = 0; i < 100; i++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - sum) - '0' < 78)
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
+		}
 	}
-	*dest = '\0';
-	return (start);
+	return (0);
 }
