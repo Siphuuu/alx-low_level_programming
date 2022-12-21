@@ -2,37 +2,37 @@
 
 /**
  * *cap_string - capitalize the strings
- * @str: string
+ * @a: string
  * Return: ponter
  */
 
-char *cap_string(char *str)
+char *cap_string(char *a)
 {
 	int i;
-	i = 0;
 
-	while ("str[i]")
+	i = 0;
+	while ("a[i]")
 	{
-		while (!(str[i] >= 'a' && str[i] <= 'z'))
+		while (!(a[i] >= 'a' && a[i] <= 'z'))
 		{
 			i++;
 		}
-		if (str[i - 1] == ' ' ||
-		    str[i - 1] == '\t' ||
-		    str[i - 1] == '\n' ||
-		    str[i - 1] == ',' ||
-		    str[i - 1] == ';' ||
-		    str[i - 1] == '.' ||
-		    str[i - 1] == '!' ||
-		    str[i - 1] == '?' ||
-		    str[i - 1] == '"' ||
-		    str[i - 1] == '(' ||
-		    str[i - 1] == ')' ||
-		    str[i - 1] == '{' ||
-		    str[i - 1] == '}' ||
+		if (a[i - 1] == ' ' ||
+		    a[i - 1] == '\t' ||
+		    a[i - 1] == '\n' ||
+		    a[i - 1] == ',' ||
+		    a[i - 1] == ';' ||
+		    a[i - 1] == '.' ||
+		    a[i - 1] == '!' ||
+		    a[i - 1] == '?' ||
+		    a[i - 1] == '"' ||
+		    a[i - 1] == '(' ||
+		    a[i - 1] == ')' ||
+		    a[i - 1] == '{' ||
+		    a[i - 1] == '}' ||
 		    i == 0)
-			str[i] -= 32;
+			a[i] -= 32;
 		i++;
 	}
-	return (str);
+	return (a);
 }
